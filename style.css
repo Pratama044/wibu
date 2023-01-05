@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 300px;
+    background-image: url('3.jpg');
+    background-size: cover;
+}
+body{
+    background-color: rgb(185, 182, 182);
+}
+header h1{
+    font-size: 30px;
+    font-family: cursive;
+    position: relative;
+    display: inline-flex;
+    margin: 40px;
+    margin-top: 110px;
+    text-align: center;
+    color: rgb(255, 0, 8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+
+
+}
+h1 span{
+    color: rgb(31, 195, 249);
+
+}
+.menu{
+    background-color: rgb(73, 84, 235);
+    height: 40px;
+    border: 1px solid;
+}
+.menu h2{
+    position: relative;
+    display: inline-block;
+    font-family: cursive;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+    
+}
+h2 span{
+    color: red;
+}
+.menu-bar{
+    display: inline-flex;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: rgb(212, 212, 212);
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+    margin-right: 5px;
+}
+input[type="checkbox"]:checked{
+    background-color: #000000;
+}
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+
+}
+input[type="checkbox"]:checked::before{
+    transform: translateX(20px);
+    transition: .5s ease;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+/* categoris */
+.dropbtn{
+    width: 20px;
+    z-index: 1;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+}
+.dropdown{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px black; */
+    z-index: 1;
+    width: 30px;
+}
+.dropdown-content a{
+    text-align: start;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+    z-index: 1;
+}
+.dropdown-content a:hover{
+    background-color: rgb(69, 68, 68);
+    color: #ffffff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+  }
+.dropdown:hover .dropbtn{
+    background-color: #26292d;
+    color: white;
+    transition: .3s;
+}
+/* menu search */
+.topnav .search-container{
+    float: right;
+}
+.topnav input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.topnav .search .search-container button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.topnav .search .search-container button:hover{
+    background: #ccc;
+}
+/* sidebar */
+.sidenav{
+    margin-top: px;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    z-index: ;
+    bottom: 8px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden; 
+    padding-top: 20px;
+    display: none;
+}
+.closebtn{
+    position: relative;
+    left: 82%;
+    border: none;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: .2s;
+    position: relative;
+    border-bottom: 0.5px solid white;
+    
+}
+.sidenav a:hover{
+    color: #ffffff;
+    background-color: rgb(51, 189, 235);
+}
+
+.burger span{
+    position: relative;
+    margin-left: 5px;
+    bottom: 12px;
+    
+}
+/* bagian update */
+footer{
+    position: relative;
+    /* top: 400px; */
+}
+.update{
+    margin-top: 15px;
+    position: relative;
+    /* top: 590px; */
+}
+.update .note{
+    position: relative;
+    text-align: center;
+
+}
+.update .note p{
+    font-size: 12px;
+    text-align: center;
+}
+.fcontainer h3{
+    position: relative;
+    font-family: cursive;
+    top: 50px;
+    margin-left: 7px;
+    left: 10px;
+    font-size: 25px;
+    
+
+}
+.menu-update{
+    margin-top: 20px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    right: 10px;
+ 
+    
+
+}
+.menu-update a{
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(14, 14, 175);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+    transition: .2s;
+    
+
+}
+.menu-update a:hover{
+    color: rgb(14, 114, 27);
+
+    
+}
+/* bagian foto */
+.image-menu{
+    top: 20px;
+    height: 700px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    margin: 0 10px 0px 10px;
+    border-radius: 5px;
+
+}
+.image{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    position: relative;
+    top: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.image img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* top: 40px;
+    left: 27%;
+    margin: 5px; */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+
+}
+.image a{
+    text-decoration: none;
+    transition: .3s;
+
+}
+.image a p{
+    font-family: sans-serif;
+    position: relative;
+    color: rgb(240, 254, 46);
+    display: block;
+    bottom: 100px;
+    left: 5px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 12px;
+
+}
+.image a span{
+    font-family: cursive;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: block;
+    bottom: 40px;
+    left: 10px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 14px;
+
+    /* font-family: fantasy;
+    position: relative;
+    color: rgb(255, 255, 255);
+    bottom: 40px;
+    left: 50px;
+    text-shadow: 2px 1px 1px black;
+    font-size: 12px; */
+}
+.image a:hover{
+    opacity: .5;
+}
+.menu-page{
+    position: absolute;
+    top: 670px;
+    text-align: center;
+    left: 100px;
+
+
+}
+.menu-page p{
+    display: inline-flex;
+    border: 1px solid rgb(100, 99, 99);
+    
+
+}
+.menu-page a {
+    text-decoration: none;
+}
+.menu-page a p{
+    color: rgb(27, 27, 117);
+    text-decoration: none;
+    width: 20px;
+    transition: .3s;
+}
+.menu-page a p:hover{
+    color: rgb(14, 114, 27);
+    border-color: #000000;
+}
+/* menu movie */
+.movie-menu{
+    top: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 490px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    margin: 0 10px 0px 10px;
+    border-radius: 5px;
+    
+}
+.container{
+    position: relative;
+}
+#movie h3{
+    position: relative;
+    font-family: cursive;
+    top: 25px;
+    margin-left: 7px;
+    font-size: 25px;
+}
+.movie{
+    left: 17px;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    position: relative;
+    /* background-color: white; */
+    margin: 2px;
+    text-align: center;
+    
+    
+}
+.movie img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-bottom: 50px solid white;
+    border-radius: 5px;
+
+}
+.movie a{
+    text-decoration: none;
+}
+.movie span{
+    bottom: 50px;
+    position: relative;
+    color: #06074d;
+    font-family: fantasy;
+    font-size: 12px;
+    transition: .2s;
+}
+.movie:hover span{
+    color: rgb(14, 114, 27);
+}
+.more{
+    text-align: center;
+    margin-top: 30px;
+    
+
+}
+.more a{
+    padding: 3px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(14, 14, 175);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+    transition: .2s;
+}
+.more a:hover{
+    color: rgb(14, 114, 27);
+}
+/* bagian menu end */
+.menu-end{
+    margin-top: 50px;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    
+}
+.end{
+    top: 20px;
+    color: white;
+    height: 250px;
+    left: 30px;
+    width: 45%;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+}
+.end h4{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+}
+.end p{
+    color: rgb(184, 184, 184);
+}
+.copyright{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    position: relative;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.233);
+}
+.copyright p{
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 10px;
+}
+.end a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-size: 14px;
+    margin: 3px;
+    transition: .3s;
+}
+.end a:hover{
+    color: white;
+}
+@media (min-width: 768px) {
+    header{
+        height: 600px;
+    }
+    header h1:nth-child(1){
+        float: right;
+    }
+    header h1{
+        position: relative;
+        top: 120px;
+    }
+    .update-menu{
+        left: 80%;
+    }
+    .image{
+        width: 25%;
+    }
+    .image-menu{
+        height: 400px;
+    }
+    .image a span{
+        left: 140px;
+    }
+    .menu-page{
+        top: 360px;
+        left: 40%;
+    }.movie{
+        width: 14%;
+    }.more{
+        top: 60px;
+    }.movie-menu{
+        height: 260px;
+    }
+    .end{
+        width: 22%;
+        height: 300px;
+        margin: 10px;
+       
+    }
+
+    
+}
